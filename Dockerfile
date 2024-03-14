@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lts/node:latest
+FROM public.ecr.aws/docker/library/node:slim
 RUN apt-get update && apt-get install git -y && apt-get install imagemagick -y;
 
 WORKDIR /ecs-app
